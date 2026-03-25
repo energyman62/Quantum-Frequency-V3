@@ -1,4 +1,5 @@
 'use client';
+import BackupButtons from "@/components/BackupButtons";
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { FrequencyBlock, PlaybackStatus, SavedSequence, SequenceItem } from '@/lib/types';
@@ -345,6 +346,7 @@ export default function FrequencySequencer() {
             onSaveSequence={saveCurrentSequence}
             onDeleteSequence={deleteSequence}
           />
+       <BackupButtons />
         )}
       </div>
 

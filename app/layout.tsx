@@ -1,4 +1,5 @@
-  title: "Quantum Frequency V3",
+export const metadata = {
+title: "Quantum Frequency V3",
   description: "Frequency generator app",
   themeColor: "#000000"
 };
@@ -23,12 +24,6 @@ const shareTechMono = Share_Tech_Mono({
   subsets: ['latin'],
   weight: '400',
 });
-
-export const metadata: Metadata = {
-  title: 'Quantum Frequency v3',
-  description: 'Play therapeutic square wave frequencies in custom sequences for the QSB',
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">

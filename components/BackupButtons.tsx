@@ -42,18 +42,28 @@ export default function BackupButtons() {
   }
 
 return (
-  <div style={{ marginTop: "30px", paddingBottom: "20px" }}>
-    <h3 style={{ marginBottom: "10px" }}>
+  <div className="mt-6 space-y-3">
+    <div className="text-xs font-orbitron tracking-widest text-muted-foreground/60 uppercase">
       Backup & Restore
-    </h3>
+    </div>
 
-    <button onClick={exportAllData}>
+    {/* Export Button */}
+    <button
+      onClick={exportAllData}
+      className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-border bg-background/40 backdrop-blur-sm text-sm font-rajdhani tracking-wide text-foreground/80 hover:text-primary hover:border-primary/40 hover:bg-background/60 transition-all"
+    >
       Export Backup
     </button>
 
-    <br /><br />
-
-    <input type="file" onChange={importAllData} />
+    {/* Import Button (styled input) */}
+    <label className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-border bg-background/40 backdrop-blur-sm text-sm font-rajdhani tracking-wide text-foreground/80 cursor-pointer hover:text-primary hover:border-primary/40 hover:bg-background/60 transition-all">
+      Import Backup
+      <input
+        type="file"
+        onChange={importAllData}
+        className="hidden"
+      />
+    </label>
   </div>
 );
 }

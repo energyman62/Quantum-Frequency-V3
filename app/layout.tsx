@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Quantum Frequency V3",
+  description: "Frequency generator app",
+  themeColor: "#000000"
+};
 import './globals.css';
 import type { Metadata } from 'next';
 import { Orbitron, Rajdhani, Share_Tech_Mono } from 'next/font/google';
@@ -22,7 +27,7 @@ const shareTechMono = Share_Tech_Mono({
 
 export const metadata: Metadata = {
   title: 'Quantum Frequency v3',
-  description: 'Play therapeutic square wave frequencies in custom sequences',
+  description: 'Play therapeutic square wave frequencies in custom sequences for the QSB',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -33,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         suppressHydrationWarning={true}
       >
         {children}
+        <link rel="manifest" href="/manifest.json" />
       </body>
     </html>
   );

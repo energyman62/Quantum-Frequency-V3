@@ -1,0 +1,1 @@
+This app generates square waves in sequences of integer frequencies between 100 and 1000Hz. It is designed to work with the QSB (Quantum Scalar Box) - a scalar wave de-stress and healing tool by lifeenergysolutions.com

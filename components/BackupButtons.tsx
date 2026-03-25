@@ -41,15 +41,19 @@ export default function BackupButtons() {
     reader.readAsText(file);
   }
 
-  return (
-    <div style={{ marginTop: "20px" }}>
-      <button onClick={exportAllData}>
-        Export Backup
-      </button>
+return (
+  <div style={{ marginTop: "30px", paddingBottom: "20px" }}>
+    <h3 style={{ marginBottom: "10px" }}>
+      Backup & Restore
+    </h3>
 
-      <br /><br />
+    <button onClick={exportAllData}>
+      Export Backup
+    </button>
 
-      <input type="file" onChange={importAllData} />
-    </div>
-  );
+    <br /><br />
+
+    <input type="file" onChange={importAllData} />
+  </div>
+);
 }

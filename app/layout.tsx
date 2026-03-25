@@ -1,4 +1,3 @@
-export const metadata = {
   title: "Quantum Frequency V3",
   description: "Frequency generator app",
   themeColor: "#000000"

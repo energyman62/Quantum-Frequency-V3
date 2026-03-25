@@ -338,7 +338,8 @@ export default function FrequencySequencer() {
           />
         )}
         {activeTab === 'saved' && (
-          <SequenceManager
+      <div>
+        <SequenceManager
             currentItems={sequence}
             savedSequences={savedSequences}
             defaultSequences={DEFAULT_SEQUENCES}
@@ -347,6 +348,7 @@ export default function FrequencySequencer() {
             onDeleteSequence={deleteSequence}
           />
        <BackupButtons />
+      </div>
         )}
       </div>
 
